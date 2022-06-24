@@ -1,0 +1,88 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+apply from: '../gradle/generate-token.gradle'
+
+apply from: "../gradle/utils.gradle"
+apply from: "../gradle/versions.gradle"
+apply from: "../gradle/ktlint.gradle"
+apply plugin: 'com.google.gms.google-services'
+
+
+android {
+    compileSdkVersion 31
+    configurations { implementation.exclude group: 'org.jetbrains', module: 'annotations' }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId "com.sku.road.zolzak"
+        minSdkVersion 27
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "x86", "arm64-v8a", "armeabi-v7a", "armeabi"
+        }
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs += 'src/main/java'
+            java.srcDirs += 'src/main/kotlin'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+        }
+    }
+}
+
+dependencies {
+    implementation 'org.jsoup:jsoup:1.13.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation platform('com.google.firebase:firebase-bom:29.1.0')
+
+
+
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'com.github.tlaabs:TimetableView:1.0.3-fx1'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'org.jetbrains:annotations-java5:15.0'
+    implementation 'com.google.firebase:firebase-database:19.5.1'
+    implementation 'com.google.firebase:firebase-analytics:17.2.3'
+    implementation 'com.google.firebase:firebase-core:17.2.3'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    ktlint "com.pinterest:ktlint:$ktlint_version"
+    // mapbox
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:9.3.0'
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-core:2.0.1'
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-navigation-ui:0.42.6'
+
+    //ar
+    implementation "com.mapbox.vision:mapbox-android-vision:0.13.0"                            
+    implementation "com.mapbox.vision:mapbox-android-vision-ar:0.13.0"
+    implementation "com.mapbox.vision:mapbox-android-vision-safety:0.13.0"
+    implementation fileTree(dir: 'libs', include: ['*.aar'])
+    implementation("com.serenegiant:common:$uvccamera_common") {
+        exclude module: 'support-v4'
+    }
+
+
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_navi_ar"
+        android:icon="@drawable/bottomview_armap_icon"
+        android:title="AR"
+        android:enabled="true"/>
+    <item
+        android:id="@+id/bottom_navi_info"
+        android:icon="@drawable/bottomview_info_icon"
+        android:title="정보"
+        android:enabled="true"/>
+    <item
+        android:id="@+id/bottom_navi_schedule"
+        android:icon="@drawable/bottomview_timetable_icon"
+        android:title="시간표"
+        android:enabled="true"/>
+
+
+</menu>

@@ -1,0 +1,514 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sku.road.zolzak.info.FacilityInfo"
+    android:id="@android:id/tabhost">
+
+    <LinearLayout
+        android:id="@+id/LL_Tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@android:id/tabcontent">
+
+            <!--시설안내-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tabGuide"
+                android:orientation="vertical" >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="재림관"
+                            android:textColor="@color/blue"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="370dp"
+                            android:layout_height="250dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/image_jaerim" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="3dp"
+                                android:text="1층\n2층\n3층\n\n\n4층\n5층\n6층\n7층\n8층\n9층\n10층"
+                                android:textColor="@color/blue"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:lineSpacingExtra="3dp"
+                                android:text="@string/jaerim"
+                                android:textColor="@color/gray" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="학술정보관"
+                            android:textColor="@color/blue"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="370dp"
+                            android:layout_height="250dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/image_library" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="3dp"
+                                android:text="1층\n2층\n3층\n4층\n5층\n6층"
+                                android:textColor="@color/blue"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:lineSpacingExtra="3dp"
+                                android:text="@string/library"
+                                android:textColor="@color/gray" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="기념관"
+                            android:textColor="@color/blue"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="370dp"
+                            android:layout_height="250dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/image_memorial" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="3dp"
+                                android:text="1층\n2층\n3층\n4층\n\n5층"
+                                android:textColor="@color/blue"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:lineSpacingExtra="3dp"
+                                android:text="@string/kinyum"
+                                android:textColor="@color/gray" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="중생관"
+                            android:textColor="@color/blue"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="370dp"
+                            android:layout_height="250dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/image_jungseng" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="3dp"
+                                android:text="지하\n1층\n2층\n3층\n4층\n5층"
+                                android:textColor="@color/blue"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:lineSpacingExtra="3dp"
+                                android:text="@string/jungsang"
+                                android:textColor="@color/gray" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="영암관"
+                            android:textColor="@color/blue"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="370dp"
+                            android:layout_height="250dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/image_youngarm" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="3dp"
+                                android:text="지하\n1층\n2층\n3층\n4층\n5층"
+                                android:textColor="@color/blue"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:lineSpacingExtra="3dp"
+                                android:text="@string/yeongam"
+                                android:textColor="@color/gray" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="학생회관"
+                            android:textColor="@color/blue"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="370dp"
+                            android:layout_height="250dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/image_student_union" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="3dp"
+                                android:text="1층\n2층\n3층\n4층\n5층"
+                                android:textColor="@color/blue"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:lineSpacingExtra="3dp"
+                                android:text="@string/haksanghoi"
+                                android:textColor="@color/gray" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="성결관"
+                            android:textColor="@color/blue"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="370dp"
+                            android:layout_height="250dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/image_sungkyul" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="3dp"
+                                android:text="지하\n1층\n2층\n3층\n4층\n5층"
+                                android:textColor="@color/blue"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:lineSpacingExtra="3dp"
+                                android:text="@string/sungkyul"
+                                android:textColor="@color/gray" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="신유관"
+                            android:textColor="@color/blue"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="370dp"
+                            android:layout_height="250dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/image_dormitory" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="3dp"
+                                android:text="지하\n1층\n2층\n3층\n4층"
+                                android:textColor="@color/blue"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:lineSpacingExtra="3dp"
+                                android:text="@string/sinyoo"
+                                android:textColor="@color/gray" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="유치원"
+                            android:textColor="@color/blue"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="370dp"
+                            android:layout_height="250dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/image_kindergarten" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="3dp"
+                                android:text="지하\n1층\n2층\n"
+                                android:textColor="@color/blue"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="25dp"
+                                android:lineSpacingExtra="3dp"
+                                android:text="@string/성결유치원"
+                                android:textColor="@color/gray" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+            <!--편의시설 안내-->
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/tabFacilities">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="편의시설 이용안내"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:textColor="@color/blue"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center">
+                </TextView>
+
+                <ScrollView
+                    android:layout_width="370dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:layout_width="370dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/image_atm" />
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/image_aed" />
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/image_cafeteria" />
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/image_japangi" />
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/image_store" />
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/image_bookstore" />
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/image_sangdam" />
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/image_printer" />
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/image_mungu" />
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/image_health" />
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/image_disabled" />
+
+
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+
+
+<!--            &lt;!&ndash;시설 안내 검색&ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical"-->
+<!--                android:id="@+id/tabSearch">-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:textColor="@color/blue"-->
+<!--                    android:textSize="25dp"-->
+<!--                    android:textStyle="bold">-->
+<!--                </TextView>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    tools:ignore="ExtraText">-->
+
+
+<!--                </LinearLayout>-->
+
+
+<!--            </LinearLayout>-->
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</TabHost>
+

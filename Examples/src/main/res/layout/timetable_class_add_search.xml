@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:id="@+id/layout_classname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:textSize="18dp"
+            android:text="강의명" />
+
+        <TextView
+            android:id="@+id/layout_professor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_margin="3dp"
+            android:text="강의시간" />
+
+        <TextView
+            android:id="@+id/layout_major"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_margin="3dp"
+            android:text="교수명" />
+
+        <!--학점, 소속학과 등 필요한 거 있으면 넣기-->
+
+        <Button
+            android:id="@+id/btn_Add_Class"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="시간표에 추가하기">
+
+        </Button>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">성결로드</string>
+    <string name="ext_video_example">External Video Source Example</string>
+    <string name="safety_example">Safety Example</string>
+    <string name="mapbox_access_token">pk.eyJ1Ijoia2ltaHl1bmEiLCJhIjoiY2wwd2V5b2NyMDlrNDNibXl0bmVrZ2dtaCJ9.TJ4lOR6a85x-pENJc2K1wA</string>
+    <string name="ar_example">AR Example</string>
+    <string name="ar_customization_example">AR Customization Example</string>
+    <string name="custom_detections_example">Custom Detections Example</string>
+    <string name="poi_example">POI Example</string>
+    <string name="camera_calibration_progress">Camera calibration: %1$d %%</string>
+    <string name="usb_video_source_example">Usb Camera Example</string>
+    <string name="vision_not_supported_title">Device is not supported</string>
+
+    <string name="vision_not_supported_message">Vision SDK does not support this device yet, check more details at &lt;a href=\"https://docs.mapbox.com/android/vision/overview/#requirements\">docs.mapbox.com&lt;/a></string>
+    <string-array name="day_spinner">
+        <item>월요일</item>
+        <item>화요일</item>
+        <item>수요일</item>
+        <item>목요일</item>
+        <item>금요일</item>
+    </string-array>
+    <string-array name="header_title">
+        <item></item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+    </string-array>
+
+    <string name="jaerim">입학홍보과,학사관리과,생활협동조합사무실
+    \n시설관재과,정보기획과,취업지원과
+    \n사무처장실,직원휴게실,총무과,재무회계과
+    \n교무과,교육혁신센터,기획예산과
+    \n공학교육혁신센터,국제교류과,평과지원과
+    \n평생교육원,상담실,강의실
+    \n대학원교학과,강의실
+    \nBI센터,창업교육센터,그린캠퍼스추진단,예비군대대
+    \n회의실,강의실
+    \n이사장실,총장실,법인사무국,회의실
+    \n노동조합사무실,회의실
+    \n컴퓨터A/S실, 교수연구실</string>
+
+    <string name="library">이용자센터,XR센터,일반/노트북 열람실
+                                \n멀티미디어/전자정보실,돌비애트모스 스튜디오
+                                \n자료열람실,XR센터 강의실
+                                \n자료열람실,바이오헬스케어 실습실
+                                \n연속간행물/참고열람실,제본간행물실
+                                \n야립국제회의실,소회의실,고서실</string>
+
+    <string name="kinyum">오딧세이21,학생쉼터
+                                \n홍대실홀,음악학부 실습실
+                                \n대학극장,언어교육원,연극영화학부 기자재식
+                                \n에스테틱실,헤어디자인실,대회의실,
+                                \n메이크업실,교수학습지원센터
+                                \n대강당,교목실,미용학과 실습실</string>
+
+    <string name="jungsang">학생식당,매점,동아리실
+                                \n외래교수실,강의실
+                                \n강의실
+                                \n강의실
+                                \n강의실,수업행동분석실
+                                \n교수연구실</string>
+
+    <string name="yeongam">피아노 실습실
+                                \n인문대학 행정실,인문대학 실습실, 교수연구실
+                                \n강의실,글로벌경영기술대학 첨단실습실
+                                \n디지털 피아노실,강의실
+                                \n교수연구실
+                                \n교구제작실,교수연구실</string>
+
+    <string name="haksanghoi">학생지원과,잡카페,사회봉사센터,글로벌라운지
+                                \n총학생회,대의원회,보건진료소
+                                \n헬스장,무도실,동아리실
+                                \n체육관,체육교육과 행정실
+                                \n체육관</string>
+
+    <string name="sungkyul">산업경영공학과 첨단강의실, 정보통신학과 실습실
+                                \n물리실습실,산업경영공학과실습실,행정실
+                                \n정보통신공학과실습실,행정실,공학인증설계실
+                                \n미디어소프트웨어학과실습실,행정실
+                                \n컴퓨터공학과실습실,행정실
+                                \n교수연구실관</string>
+
+    <string name="sinyoo">기관실,전기실
+                                \n세미나실,기숙사
+                                \n기숙사,식당
+                                \n세면장,세탁실,샤워장,기숙사,기숙사행정실
+                                \n기숙사,휴게실</string>
+
+    <string name="성결유치원">자료실,세탁실,보일러실
+                                \n원장실,교사실,유희실,주방,교실
+                                \n도서관,교실,목공실,유희실\n</string>
+
+    <string name="special_char1">Roll &amp;       Noodles</string>
+    <string name="special_char2">Fry&amp;Rice</string>
+</resources>

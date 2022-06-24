@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+        <EditText
+            android:id="@+id/subject_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="과목명" />
+
+        <EditText
+            android:id="@+id/professor_Edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="교수명" />
+
+        <EditText
+            android:id="@+id/classroom_Edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="강의실" />
+
+    </LinearLayout>
+
+    <!--수업 시간 스피너 설정, 임시로 한 거라서 수정 필요할 수 있음-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--strings.xml-->
+        <Spinner
+            android:id="@+id/day_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"/>
+
+        <TextView
+            android:id="@+id/start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="9:00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text=" - " />
+
+        <TextView
+            android:id="@+id/end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="11:45" />
+
+        <Spinner
+            android:id="@+id/day_spinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog" />
+
+        <TextView
+            android:id="@+id/start_time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="9:00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text=" - " />
+
+        <TextView
+            android:id="@+id/end_time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="11:45" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+        <Button
+            android:id="@+id/timetable_search_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="시간표로 검색하기" />
+
+        <Button
+            android:id="@+id/alarm_add_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="알람 등록하기"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <com.mapbox.mapboxsdk.maps.MapView-->
+<!--        android:id="@+id/mapView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="1.0"-->
+<!--        mapbox:mapbox_cameraTargetLat="37.321643"-->
+<!--        mapbox:mapbox_cameraTargetLng="127.126756"-->
+<!--        mapbox:mapbox_cameraZoom="16">-->
+<!--    </com.mapbox.mapboxsdk.maps.MapView>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/autoCompleteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:completionHint="pick an item"
+            android:inputType="textAutoComplete" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnStartNavigation"
+                android:layout_width="180dp"
+                android:layout_height="43dp"
+                android:enabled="true"
+                android:text="캠퍼스 지도" />
+
+            <Button
+                android:id="@+id/btnStartARNavigation"
+                android:layout_width="180dp"
+                android:layout_height="43dp"
+                android:enabled="true"
+                android:text="AR 경로 안내 시작"
+                android:onClick="onClick"/>
+
+            <Button
+                android:id="@+id/btnSetDestination"
+                android:layout_width="180dp"
+                android:layout_height="43dp"
+                android:enabled="true"
+                android:text="메뉴(?)버튼"
+                android:onClick="onClick"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="메뉴버튼 누르면 각 건물 이름버튼 or 리스트 뜨도록\n
+                (둘중에 화면에 편한걸로 암거나)
+                \n거기에 각각 좌표값 지정해서 목적지 설정하는건 일단 나중에"/>
+
+       </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

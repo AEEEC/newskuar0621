@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sku.road.zolzak.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="70dp"
+            android:text="5월 일정"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/table_inside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:background="@drawable/table_outside"
+                android:gravity="center"
+                android:text="05.09 ~ 05.13"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:background="@drawable/table_inside"
+                android:textSize="15dp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:background="@drawable/table_outside"
+                android:gravity="center"
+                android:text="05.11 ~ 05.13"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:background="@drawable/table_inside"
+                android:textSize="15dp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:background="@drawable/table_outside"
+                android:textSize="15dp"
+                android:text="05.16 ~ 05.20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:background="@drawable/table_inside"
+                android:textSize="15dp"
+                />
+
+
+        </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv9"
+                        android:layout_width="30dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/table_outside"
+                        android:gravity="center"
+                        android:text="05.23 ~ 05.27"
+                        android:textSize="15dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tv8"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:background="@drawable/table_inside"
+                        android:textSize="15dp" />
+
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv11"
+                        android:layout_width="30dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/table_outside"
+                        android:gravity="center"
+                        android:text="05.26 ~ 05.26"
+                        android:textSize="15dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tv10"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:background="@drawable/table_inside"
+                        android:textSize="15dp" />
+
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv13"
+                        android:layout_width="30dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/table_outside"
+                        android:gravity="center"
+                        android:text="05.27 ~ 05.27"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv12"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:background="@drawable/table_inside"
+                        android:textSize="15dp" />
+
+
+                </TableRow>
+        <!--
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv15"
+                        android:layout_width="30dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/diet_table_outside"
+                        android:gravity="center"
+                        android:text="03.22 ~ 03.24"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv16"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:background="@drawable/diet_table_inside"
+                        android:textSize="15dp" />
+
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv17"
+                        android:layout_width="30dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/diet_table_outside"
+                        android:gravity="center"
+                        android:text="03.22 ~ 03.22"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv18"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:background="@drawable/diet_table_inside"
+                        android:textSize="15dp" />
+
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv19"
+                        android:layout_width="30dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/diet_table_outside"
+                        android:gravity="center"
+                        android:text="03.31 ~ 03.31"
+                        android:textSize="15dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tv20"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:background="@drawable/diet_table_inside"
+                        android:textSize="15dp" />
+
+
+                </TableRow>
+        -->
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
