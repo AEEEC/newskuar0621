@@ -7,9 +7,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/image_diet"
-    tools:context="com.sku.road.zolzak.MainActivity">
+    tools:context=".MainActivity">
 
-<!--
 
     <ImageView
         android:id="@+id/imageView"
@@ -23,12 +22,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView" />
 
-     <ImageView
+    <ImageView
         android:layout_width="38dp"
         android:layout_height="38dp"
         android:layout_marginEnd="64dp"
         android:src="@drawable/image_plate"
-        app:layout_constraintBaseline_toBottomOf="parent"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.974"
@@ -47,7 +45,6 @@
         android:textColor="@color/gray"
         android:textSize="30dp"
         android:textStyle="bold"
-        app:layout_constraintBaseline_toBottomOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -203,6 +200,5 @@
         </TableRow>
     </TableLayout>
 
--->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
